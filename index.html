@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comptabilité Analytique - Résumé Complet (S4 Économie) - Pr Youssef RACHID</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            background-color: #f4f7fc;
+            color: #1e2a3e;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            padding: 2rem 2rem 3rem 2rem;
+        }
+
+        /* en-tête */
+        .header {
+            border-bottom: 4px solid #0b5e7e;
+            margin-bottom: 2rem;
+            padding-bottom: 1.25rem;
+        }
+
+        .header h1 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #0a3b4b;
+            letter-spacing: -0.3px;
+        }
+
+        .header .sub {
+            color: #2c6e8f;
+            font-weight: 500;
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            border-left: 3px solid #2c6e8f;
+            padding-left: 0.85rem;
+        }
+
+        /* titres de sections */
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 2px solid #cbd5e1;
+            color: #0c4a6e;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.75rem 0;
+            color: #155e75;
+            background: #eef2ff;
+            display: inline-block;
+            padding: 0.1rem 0.8rem;
+            border-radius: 30px;
+        }
+
+        h4 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 1rem 0 0.5rem 0;
+            color: #1e3a5f;
+        }
+
+        /* blocs et boîtes */
+        .formula-card {
+            background: #f0f9ff;
+            border-left: 6px solid #0284c7;
+            padding: 1rem 1.3rem;
+            margin: 1.2rem 0;
+            border-radius: 0.75rem;
+            font-family: 'Courier New', 'JetBrains Mono', monospace;
+            font-weight: 500;
+            font-size: 1rem;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+        }
+
+        .formula {
+            font-family: monospace;
+            font-weight: 600;
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            font-size: 0.9rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        th {
+            background-color: #e2eaf1;
+            color: #0a2f44;
+            font-weight: 700;
+            padding: 10px 12px;
+            border: 1px solid #cbd5e1;
+        }
+
+        td {
+            border: 1px solid #d4e0ec;
+            padding: 10px 12px;
+            vertical-align: top;
+            background-color: #ffffff;
+        }
+
+        ul, .liste {
+            margin: 0.75rem 0 0.75rem 1.8rem;
+        }
+
+        li {
+            margin: 0.3rem 0;
+        }
+
+        .highlight-badge {
+            background: #eef2ff;
+            border-radius: 20px;
+            padding: 0.1rem 0.7rem;
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: #0369a1;
+            display: inline-block;
+        }
+
+        .grid-cols {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .info-note {
+            background: #fef9e3;
+            border-left: 4px solid #f59e0b;
+            padding: 0.8rem 1.2rem;
+            margin: 1rem 0;
+            border-radius: 12px;
+            font-size: 0.9rem;
+        }
+
+        hr {
+            margin: 1.5rem 0;
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, #cbd5e6, transparent);
+        }
+
+        footer {
+            margin-top: 2.5rem;
+            text-align: center;
+            font-size: 0.75rem;
+            color: #5a6e7c;
+            border-top: 1px solid #e2edf2;
+            padding-top: 1.5rem;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                padding: 1.2rem;
+            }
+            th, td {
+                font-size: 0.8rem;
+                padding: 6px 8px;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>📊 Résumé Complet — Comptabilité Analytique (S4 Économie)</h1>
+        <div class="sub">Pr Youssef RACHID — FEG Settat 2025/2026</div>
+    </div>
+
+    <!-- ========== CHAPITRE INTRODUCTIF ========= -->
+    <h2>📘 Chapitre Introductif : Caractéristiques de la CAE</h2>
+    <p><strong>Définition</strong> : La comptabilité analytique est un outil de gestion interne qui quantifie les flux internes et contrôle les consommations pour répondre à : <em>Qui consomme quoi et combien ? Qui produit quoi, combien et comment ?</em></p>
+
+    <p><strong>Comparaison CG vs CAE :</strong></p>
+    <table>
+        <thead>
+            <tr><th>Élément</th><th>Compta Générale</th><th>Compta Analytique</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Obligation</td><td>Obligatoire</td><td>Facultative</td></tr>
+            <tr><td>Vision</td><td>Globale</td><td>Détaillée</td></tr>
+            <tr><td>Horizon</td><td>Passé</td><td>Présent &amp; Futur</td></tr>
+            <tr><td>Flux observés</td><td>Externes</td><td>Internes</td></tr>
+            <tr><td>Classement charges</td><td>Par nature</td><td>Par destination</td></tr>
+            <tr><td>Objectifs</td><td>Financiers</td><td>Économiques</td></tr>
+            <tr><td>Règles</td><td>Rigides</td><td>Souples</td></tr>
+            <tr><td>Utilisateurs</td><td>Tiers + direction</td><td>Tous les responsables</td></tr>
+        </tbody>
+    </table>
+
+    <p><strong>Objectifs de la CAE :</strong></p>
+    <ul>
+        <li>Connaître les coûts des fonctions (approvisionnement, production, distribution)</li>
+        <li>Évaluer les stocks au bilan</li>
+        <li>Analyser les résultats par produit</li>
+    </ul>
+
+    <!-- ========= CHAPITRE 1 ========= -->
+    <h2>📂 Chapitre 1 : Les Charges de la CAE</h2>
+    <div class="formula-card"><strong>Formule fondamentale :</strong><br>
+    <span class="formula">Charges CAE = Charges CG − Charges non incorporables + Charges supplétives ± Charges calculées</span>
+    </div>
+
+    <h3>1. Charges non incorporables (à éliminer)</h3>
+    <ul>
+        <li>Charges sans rapport avec l'activité (ex. : assurance-vie PDG)</li>
+        <li>Charges exceptionnelles (VNA immobilisation cédée, pénalités fiscales)</li>
+        <li>Amortissements d'immobilisations en non-valeur</li>
+        <li>Provisions pour dépréciation</li>
+        <li>Charges relatives à une période antérieure</li>
+        <li>Impôts sur le résultat</li>
+    </ul>
+
+    <h3>2. Charges supplétives (à créer)</h3>
+    <p>Charges absentes de la CG, introduites pour comparaison équitable entre entreprises :</p>
+    <ul><li>Rémunération théorique du travail de l'exploitant</li><li>Rémunération théorique des capitaux propres</li></ul>
+
+    <h3>3. Charges calculées (à modifier)</h3>
+    <table>
+        <thead><tr><th>Type</th><th>Description</th><th>Exemple</th></tr></thead>
+        <tbody>
+            <tr><td><strong>Charges d'usage</strong></td><td>Remplacent les dotations aux amortissements</td><td>Machine amortie mais encore utilisée → annuité recalculée sur valeur actuelle</td></tr>
+            <tr><td><strong>Charges étalées</strong></td><td>Remplacent les dotations aux provisions</td><td>Provision théorique de 100 000, constituée à 30 000 → différence 70 000</td></tr>
+            <tr><td><strong>Charges abonnées</strong></td><td>Calculées sur une période plus précise</td><td>Loyer annuel 8 800 DH / 11 mois travaillés = 800 DH/mois</td></tr>
+        </tbody>
+    </table>
+
+    <h3>4. Typologie des charges CAE</h3>
+    <ul>
+        <li><strong>Directes</strong> : affectées sans calcul à un coût précis</li>
+        <li><strong>Indirectes</strong> : nécessitent un calcul préalable via les centres d'analyse</li>
+        <li><strong>Fixes</strong> : constantes quel que soit le volume d'activité</li>
+        <li><strong>Variables</strong> : varient avec le volume de production</li>
+    </ul>
+
+    <!-- ========= CHAPITRE 2 : Hiérarchie des coûts ========= -->
+    <h2>📐 Chapitre 2 : Hiérarchie des Coûts</h2>
+    <h3>Entreprise Commerciale</h3>
+    <p><em>Approvisionnement → Stock M/ses → Distribution</em></p>
+    <ul>
+        <li><strong>Coût d'achat</strong> : Prix d'achat + Charges appro. directes + indirectes</li>
+        <li><strong>Inventaire permanent</strong> : CMUP = (SI valeur + Entrées valeur) / (SI qté + Entrées qté)</li>
+        <li><strong>Coût de revient</strong> : Coût d'achat M/ses vendues + Coût de distribution</li>
+        <li><strong>Résultat analytique</strong> : CA HT − Coût de revient</li>
+    </ul>
+
+    <h3>Entreprise Industrielle</h3>
+    <p><em>Approvisionnement → Stock MP → Production → Stock PF → Distribution</em></p>
+    <ul>
+        <li><strong>Coût d'achat MP</strong> : Prix d'achat + Charges appro. directes + indirectes</li>
+        <li><strong>Coût de production PF</strong> : Coût d'achat MP consommées + Frais de production</li>
+        <li><strong>Coût de revient PF vendus</strong> : Coût de production PF vendus + Coût de distribution</li>
+        <li><strong>Résultat analytique</strong> : CA HT − Coût de revient PF vendus</li>
+    </ul>
+
+    <!-- ========= CHAPITRE 3 : Méthodes d'évaluation des stocks ========= -->
+    <h2>📦 Chapitre 3 : Méthodes d'Évaluation des Stocks</h2>
+    <p><strong>Types d'inventaire</strong> : <strong>Inventaire permanent</strong> (enregistrement continu → stock théorique) · <strong>Inventaire intermittent</strong> (comptage physique périodique obligatoire 1×/an)</p>
+    <p><strong>Méthodes de valorisation des sorties</strong></p>
+    <table>
+        <thead><tr><th>Méthode</th><th>Principe</th><th>Avantages</th><th>Inconvénients</th></tr></thead>
+        <tbody>
+            <tr><td>CMUP après chaque entrée</td><td>Coût moyen recalculé après chaque entrée</td><td>Valorisation au fil de l'eau</td><td>Valeur faussée en cas de variation définitive</td></tr>
+            <tr><td>CMUP fin de période</td><td>Coût moyen calculé en fin de période</td><td>Même coût pour toutes les sorties</td><td>Retarde le calcul des coûts</td></tr>
+            <tr><td>FIFO</td><td>Première entrée = première sortie</td><td>Stock valorisé au coût le plus récent</td><td>Sorties décalées par rapport à l'évolution des coûts</td></tr>
+            <tr><td>LIFO</td><td>Dernière entrée = première sortie</td><td>Sorties proches de la réalité du marché</td><td>Stock valorisé à des coûts très anciens</td></tr>
+        </tbody>
+    </table>
+
+    <!-- ========= CHAPITRE 4 : Traitement des charges ========= -->
+    <h2>⚙️ Chapitre 4 : Traitement des Charges (Centres d'Analyse)</h2>
+    <ul>
+        <li><strong>Charges directes</strong> → affectées directement aux coûts sans calcul</li>
+        <li><strong>Charges indirectes</strong> → réparties via les <strong>centres d'analyse</strong></li>
+    </ul>
+    <p><strong>Types de centres d'analyse</strong></p>
+    <table>
+        <thead><tr><th>Type</th><th>Rôle</th><th>Exemples</th></tr></thead>
+        <tbody>
+            <tr><td>Centres principaux</td><td>Coûts imputés aux produits directement</td><td>Appro., Production, Distribution</td></tr>
+            <tr><td>Centres auxiliaires</td><td>Au service des centres principaux</td><td>RH, Entretien, Force motrice</td></tr>
+            <tr><td>Centres de structure</td><td>Charges communes à toutes fonctions</td><td>Direction générale, Comptabilité</td></tr>
+        </tbody>
+    </table>
+    <p><strong>Répartition primaire</strong> : toutes les charges indirectes réparties entre tous les centres (principaux + auxiliaires) selon des clés de répartition.<br>
+    <strong>Répartition secondaire</strong> : les totaux des centres auxiliaires sont ensuite répartis entre les centres principaux uniquement.<br>
+    <strong>Prestations réciproques</strong> : quand deux centres auxiliaires s'échangent des prestations → résolution par système d'équations.</p>
+    <div class="formula-card"><strong>Unités d'œuvre (UO) et taux de frais</strong><br>
+    <span class="formula">Coût UO = Total du centre / Nombre d'UO</span><br>
+    Exemples d'UO : heure MOD, kg de matière, heure machine, CA réalisé (taux de frais %).</div>
+
+    <!-- ========= CHAPITRE 5 : Éléments correctifs ========= -->
+    <h2>🔄 Chapitre 5 : Éléments Correctifs du Coût de Production</h2>
+    <h3>1. En-cours de production</h3>
+    <p>Produits commencés mais non achevés en fin de période.</p>
+    <div class="formula-card"><span class="formula">Coût de production = Charges de production + En-cours initial − En-cours final</span></div>
+    <p>Méthodes d'évaluation : cumul des charges / coûts préétablis / méthode forfaitaire globale.</p>
+
+    <h3>2. Produits résiduels (déchets et rebuts)</h3>
+    <table>
+        <thead><tr><th>Situation</th><th>Traitement</th></tr></thead>
+        <tbody>
+            <tr><td>Résiduel utilisable</td><td>Valorisé au prix de marché → déduit du coût de production</td></tr>
+            <tr><td>Résiduel vendable</td><td>Valeur = Prix de vente − Frais de distribution (± frais de traitement)</td></tr>
+            <tr><td>Résiduel sans valeur</td><td>Frais d'évacuation ajoutés au coût de production</td></tr>
+        </tbody>
+    </table>
+
+    <h3>3. Sous-produits</h3>
+    <p>Résidu important, valorisé par :</p>
+    <ul><li>Prix de vente − bénéfice estimé − charges de distribution</li><li>Partage de l'ensemble des charges de production</li></ul>
+
+    <!-- ========= CHAPITRE 6 : Imputation rationnelle ========= -->
+    <h2>📊 Chapitre 6 : Imputation Rationnelle</h2>
+    <p><strong>Objectif</strong> : éliminer l'influence des charges fixes sur le coût de revient en cas de saisonnalité ou de sous-activité.</p>
+    <div class="formula-card">
+        <span class="formula">Coefficient d'activité (CIR) = Activité réelle / Activité normale</span><br>
+        <span class="formula">Coût d'imputation rationnelle = Charges variables + (Charges fixes × CIR)</span>
+    </div>
+    <ul>
+        <li><strong>CIR > 1</strong> → <strong>Boni de suractivité</strong></li>
+        <li><strong>CIR &lt; 1</strong> → <strong>Coût de sous-activité (chômage)</strong></li>
+        <li><strong>CIR = 1</strong> → Activité normale</li>
+    </ul>
+    <p>La différence d'incorporation = Charges fixes réelles − Charges fixes imputées.</p>
+
+    <!-- ========= CHAPITRE 7 : Coût variable et seuil ========= -->
+    <h2>📈 Chapitre 7 : Méthode du Coût Variable et Seuil de Rentabilité</h2>
+    <p><strong>Compte de résultat différentiel</strong></p>
+    <table>
+        <thead><tr><th>Élément</th><th>Montant</th><th>%</th></tr></thead>
+        <tbody>
+            <tr><td>Chiffre d'affaires (CA)</td><td></td><td>100</td></tr>
+            <tr><td>− Charges variables (CV)</td><td></td><td></td></tr>
+            <tr><td><strong>= Marge sur coût variable (M/CV)</strong></td><td></td><td></td></tr>
+            <tr><td>− Charges fixes (CF)</td><td></td><td></td></tr>
+            <tr><td><strong>= Résultat (R)</strong></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <p><strong>Indicateurs clés</strong></p>
+    <div class="formula-card">
+        <span class="formula">Seuil de rentabilité (SR) = CF / Taux de M/CV</span><br>
+        <span class="formula">Point mort = (SR / CA annuel) × 360 jours</span><br>
+        <span class="formula">Marge de sécurité = CA − SR</span>
+    </div>
+    <div class="info-note">
+        💡 <strong>SR</strong> = CA minimum pour lequel le résultat est nul. <strong>Point mort</strong> = date à laquelle le SR est atteint.
+    </div>
+
+    <!-- petit rappel complet -->
+    <hr>
+    <div style="font-size: 0.85rem; background: #f9fbfd; padding: 1rem; border-radius: 20px; margin: 1.5rem 0;">
+        <p style="font-weight: 600;">📌 Récapitulatif hiérarchique des coûts & analytique :</p>
+        <ul style="margin-bottom: 0;">
+            <li><strong>Charges incorporées</strong> = CG - non incorporables + supplétives ± calculées</li>
+            <li>Les centres d'analyse permettent de répartir les charges indirectes (UO).</li>
+            <li>Les méthodes d'évaluation des stocks (CMUP, FIFO, LIFO) impactent les coûts de revient.</li>
+            <li>L'imputation rationnelle corrige l'effet des charges fixes face à la sous/suractivité.</li>
+            <li>Le seuil de rentabilité est un outil essentiel pour la prise de décision.</li>
+        </ul>
+    </div>
+
+    <footer>
+        © Résumé complet — Comptabilité Analytique (S4 Économie) · Pr Youssef RACHID — FEG Settat 2025/2026<br>
+        Document conforme au cours officiel – Toutes les définitions, tableaux et formules sont intégralement reproduits.
+    </footer>
+</div>
+</body>
+</html>
